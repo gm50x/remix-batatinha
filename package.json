@@ -7,6 +7,7 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "cross-env NODE_ENV=production remix-serve ./build",
+    "postinstall": "rm -f node_modules/remix/index.d.ts && remix setup node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,6 +22,7 @@
     "remix": "^1.4.1"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.4.1"
+    "@remix-run/dev": "^1.4.1",
+    "@remix-run/vercel": "^1.4.1"
   }
 }
